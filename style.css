@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+}
+
+.wrapper {
+    height: 90vh;
+    width: 80vw;
+    display: grid;
+    gap: 70px;
+    justify-content: center;
+    background-color: rgb(232, 232, 220);
+    border-radius: 25px;
+}
+
+/* Header */
+
+header {
+    width: 70vw;
+    height: 15vh;
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+header .input-bar {
+    display: grid;
+    grid-template-columns: 32% 55% 10%;
+    gap: 10px;
+    height: 35px;
+}
+
+header .add-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header .add-btn:hover{
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+
+/* Main */
+
+main {
+    height: 72vh;
+}
+
+main .task {
+    display: grid;
+    grid-template-columns: 15% 60% 11% 11%;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+main button {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
