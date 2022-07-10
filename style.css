@@ -28,7 +28,6 @@ body {
 header {
     width: 70vw;
     height: 15vh;
-    border-bottom: 2px solid #fff;
 }
 
 header h1 {
@@ -41,6 +40,12 @@ header .input-bar {
     grid-template-columns: 32% 55% 10%;
     gap: 10px;
     height: 35px;
+}
+
+header input {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 header .add-btn {
@@ -72,6 +77,10 @@ main .task {
     background-color: #fff;
 }
 
+.task-title {
+    font-weight: 900;
+}
+
 main button {
     background-color: #fff;
     border-radius: 5px;
@@ -82,4 +91,10 @@ main button:hover {
     cursor: pointer;
     background-color: #000;
     color: #fff;
+}
+
+/* Completed task */
+
+main .completed {
+    background-color: rgb(102, 151, 102);
 }
