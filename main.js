@@ -14,5 +14,6 @@ addBtn.addEventListener('click', () => {
     const newTask = document.createElement('li');
     newTask.className = 'task';
     newTask.innerHTML += `<b>${todoTitleInput.value}</b> ${todoBodyInput.value} <button class="edit-btn">Edit</button><button class="complete-btn">Complete</button>`;
-    taskContainer.appendChild(newTask);
+    (todoTitleInput.value === '' || todoBodyInput.value === '') ? alert("You must write something") : taskContainer.appendChild(newTask);
+
 });
