@@ -35,7 +35,26 @@ addBtn.addEventListener('click', () => {
     // Change button text from edit to save
 
     editBtn.addEventListener('click', () =>{
-        editBtn.innerHTML === "Edit" ? editBtn.innerHTML = "Save" : editBtn.innerHTML = "Edit";
+
+        const taskTitle = document.querySelector('.task-title');
+        const taskBody = document.querySelector('.task-body');
+
+        // Edit task
+
+        if(editBtn.innerHTML == "Edit") {
+            todoTitleInput.focus();
+            todoTitleInput.value = taskTitle.innerText;
+            todoBodyInput.value = taskBody.innerText;
+            editBtn.innerHTML = "Save";
+        }
+
+        //Save task
+
+        else {
+            taskTitle.innerText = todoTitleInput.value;
+            taskBody.innerText = todoBodyInput.value;
+            editBtn.innerHTML = "Edit";
+        }
     });
 
     // Change task background color
